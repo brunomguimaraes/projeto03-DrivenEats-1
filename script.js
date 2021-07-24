@@ -1,31 +1,46 @@
 function mainCourse(element) {
 
     let choice = document.querySelector(".main-course.green-border");
-    if (choice !== null) {
+    let checking = document.querySelector(".main-course .check.checked-icon");
+    if ((choice && checking) !== null) {
         choice.classList.toggle("green-border");
+        checking.classList.toggle("checked-icon");
     }
     
     element.classList.toggle("green-border");
+
+    let checkIcon = document.querySelector(".main-course.green-border .check");
+    checkIcon.classList.toggle("checked-icon");
 }
 
 function drink(element) {
 
     let choice = document.querySelector(".drinks.green-border");
-    if (choice !== null) {
+    let checking = document.querySelector(".drinks .check.checked-icon");
+    if ((choice && checking) !== null) {
         choice.classList.toggle("green-border");
+        checking.classList.toggle("checked-icon");
     }
     
     element.classList.toggle("green-border");
+
+    let checkIcon = document.querySelector(".drinks.green-border .check");
+    checkIcon.classList.toggle("checked-icon");
 }
 
 function desert(element) {
 
     let choice = document.querySelector(".deserts.green-border");
-    if (choice !== null) {
+    let checking = document.querySelector(".deserts .check.checked-icon");
+    if ((choice && checking) !== null) {
         choice.classList.toggle("green-border");
+        checking.classList.toggle("checked-icon");
     }
     
     element.classList.toggle("green-border");
+
+    let checkIcon = document.querySelector(".deserts.green-border .check");
+    checkIcon.classList.toggle("checked-icon");
 }
 
 function finish() {
