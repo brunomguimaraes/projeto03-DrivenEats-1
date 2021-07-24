@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
+}
 
+.font-righteous {
+    font-family: 'Righteous', cursive;
 }
 
 .top-bar {
@@ -58,19 +66,44 @@ body {
 }
 
 .content-options {
-    background-color: #40f05d; /* concertar */
+    background-color: #EEEEEE; /* concertar */
     display: flex;
     overflow-x: scroll;
-    width: 1000px; /* conceertar */ 
 }
 
 .option-box {
     width: 172px;
+    min-width: 172px;
     height: 210px;
     background-color: #ffffff;
     border-radius: 9px;
     margin-right: 16px;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    padding: 18px 14px 13px 14px;
+}
+
+.menu img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.description {
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .bottom-bar {
@@ -105,4 +138,7 @@ body {
     font-weight: 400;
 }
 
+item-selection {
+    border: 5px solid green;
+}
 
