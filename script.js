@@ -88,6 +88,10 @@ function desert(element) {
 
 }
 
+function confirm() {
+    
+}
+
 
 
 
