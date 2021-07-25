@@ -82,6 +82,7 @@ body {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     padding: 18px 14px 2px 14px;
     box-sizing: content-box;
+    cursor: pointer;
 }
 
 .menu img {
@@ -91,7 +92,7 @@ body {
 }
 
 .check {
-    color: #632323;
+    color: #ffffff;
     font-size: 22px;
 }
 
@@ -132,7 +133,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.bottom-bar-content {
+.bottom-bar-button {
     height: 61px;
     width: 100vw;
     background-color: #CBCBCB;
@@ -144,13 +145,10 @@ body {
     border-radius: 50px;
     margin: 15px 25px;
     border: none;
-}
-
-.bottom-bar-content {
     cursor: pointer;
 }
 
-.finish-button {
+.green-button {
     background-color: #32B72F;
 }
 
@@ -162,7 +160,7 @@ body {
     border: 5px solid #32B72F;
 }
 
-.checked-icon {
+.green-icon {
     color: #32B72F;
 }
 
