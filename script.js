@@ -89,11 +89,22 @@ function desert(element) {
 }
 
 function confirm() {
-    
+    let element = document.querySelector(".bottom-bar-button");
+    let released = element.innerHTML;
+    if (released === "Fechar pedido") {
+        let appearback = document.querySelector(".transparent-background");
+        appearback.classList.add("appearback");
+        let appearbox = document.querySelector(".confirmation-box");
+        appearbox.classList.add("appearbox");
+    }
 }
 
-
-
+function canceling() {
+    let disappearback = document.querySelector(".transparent-background");
+    disappearback.classList.remove("appearback");
+    let disappearbox = document.querySelector(".confirmation-box");
+    disappearbox.classList.remove("appearbox");
+}
 
 
                 
