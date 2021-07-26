@@ -71,6 +71,12 @@ body {
     overflow-x: scroll;
 }
 
+@media (pointer: coarse) and (hover: none) {
+    .content-options::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
 .option-box {
     width: 162px;
     min-width: 162px;
