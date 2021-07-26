@@ -127,16 +127,30 @@ function confirm() {
         let userName = prompt("Qual seu nome?");
         let userAdress = prompt("Qual seu endereço?");
 
+        if ((userName && userAdress) === null) {
 
-        function message(dish, drink, desert, total, userName, userAdress) {
+            function message(dish, drink, desert, total) {
 
-            let text = "https://wa.me/5521972966098?text=" + encodeURIComponent("Olá, gostaria de fazer o pedido:\n- Prato: " + dish + "\n- Bebida: " + drink + "\n- Sobremesa: " + desert + "\nTotal: R$ " + total + "\n\nNome: " + userName + "\nEndereço: " + userAdress);
-            
-            let linkWhats = document.querySelector(".buttons .alright .link");
-            linkWhats.href = text;
+                let text = "https://wa.me/5521972966098?text=" + encodeURIComponent("Olá, gostaria de fazer o pedido:\n- Prato: " + dish + "\n- Bebida: " + drink + "\n- Sobremesa: " + desert + "\nTotal: R$ " + total);
+                let linkWhats = document.querySelector(".buttons .alright .link");
+                linkWhats.href = text;
+            }
+
+            message(mainDishName, drinkName, desertName, total.toFixed(2));
+
+        } else {
+
+            function message(dish, drink, desert, total, userName, userAdress) {
+
+                let text = "https://wa.me/5521972966098?text=" + encodeURIComponent("Olá, gostaria de fazer o pedido:\n- Prato: " + dish + "\n- Bebida: " + drink + "\n- Sobremesa: " + desert + "\nTotal: R$ " + total + "\n\nNome: " + userName + "\nEndereço: " + userAdress);          
+                let linkWhats = document.querySelector(".buttons .alright .link");
+                linkWhats.href = text;
+            }
+
+            message(mainDishName, drinkName, desertName, total.toFixed(2), userName, userAdress);
+
         }
 
-        message(mainDishName, drinkName, desertName, total.toFixed(2), userName, userAdress);
 
     }
 }
